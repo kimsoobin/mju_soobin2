@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tab_container">
+
+        <ListView
+            android:id="@+id/rider_listView_1"
+            android:paddingTop="11dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/message"
+            android:layout_height="match_parent"
+            android:padding="14dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/dotman"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:padding="14dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/review"
+            android:layout_height="65dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:padding="14dp"
+            />
+        <ImageView
+            android:layout_width="0dp"
+            android:src="@drawable/dotdot"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:padding="14dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
